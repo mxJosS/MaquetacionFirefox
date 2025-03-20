@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="contenedor_cabecera ancho margen">
+      <div class="moz">
+       <img src="imagenes/logo_cabecera.svg" alt="Logo Mozilla">
+      </div>
+      <div class="menu">
+        <a href="#">Navegador Firefox</a>
+        <a href="#">Productos</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Innovación</a>
+      </div>
+      <div class="download">
+        <a href="#">Descargar Firefox</a>
+      </div>
+    </div>
+    
+    <div class="contenedor_firefox ancho2 margen2">
+    <div class="contenido">
+      <div class="textito">
+     <img src="imagenes/logo_firefox.svg" alt="Logo de Firefox" class="logo_firefox">
+      <h1>Rápido para siempre</h1>
+      <br>
+        <p class="texto">Con el doble de velocidad, protección de privacidad incorporada y Mozilla detrás, el nuevo Firefox es la mejor forma de navegar.</p>
+          <a href="#" class="boton">Descargar Firefox</a>
+            <p class="aviso">Aviso de privacidad de Firefox</p>
+         </div>
+        <div class="compu">
+           <img class="img_compu" src="imagenes/foto_computadora.png" alt="Foto de computadora">
+         </div>
+      </div>
+    </div>
+    <div class="contenedor_imagengrande ancho2 margen2">
+      <div class="contenido_dino">
+        <div class="imagen_dino">
+            <img src="imagenes/dinosaurio.svg" alt="Dinosaurio Mozilla">
+        </div>
+        <div class="texto_dino">
+            <h1>Hacemos Internet más seguro, saludable y rápido para siempre.</h1>
+            <p>
+                Mozilla es la organización sin ánimo de lucro responsable de Firefox, el navegador 
+                alternativo original. Creamos productos y políticas para mantener Internet al servicio 
+                de las personas, no del beneficio.
+            </p>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="contenedor_nosotros ancho2 margen2">
+      <div class="impacto">
+        <h1> Nuestro Impacto</h1>
+        <br>
+        <p> Cuando usas Firefox, ayudas luchar contra la desinformación en Internet, enseñar habilidades digitales y hacer más humana la sección de comentarios. Mira lo que ayuda a crear un Internet más saludable.</p>
+        <br>
+        <ul>
+          <li><a href="#">Mozilla Information Trust Initiative</a></li>
+          <li><a href="#">Empoderando a las mujeres en línea</a></li>
+          <li><a href="#">The Coral Project</a></li>
+          <li><a href="#">Lee nuestro informe sobre la salud de Internet</a></li>
+      </ul>
+      </div>
+      <div class="innovaciones">
+        <h1>Nuestras Innovaciones</h1>
+        <br>
+        <p>Nuestra la Web como plataforma, construimos tecnologías abiertas e innovadoras que permiten a los desarrolladores liberarse de los ecosistemas corporativos cerrados, con el fin de crear una Web más segura y rápida para todos nosotros.</p>
+          <br>
+          <ul>
+            <li><a href="#">Common Voice</a></li>
+            <li><a href="#">Plataforma de realidad virtual</a></li>
+            <li><a href="#">Servo</a></li>
+            <li><a href="#">Rust</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="contenedor_extensiones">
+      <div class="extensiones">
+        <img src="imagenes/icono1.png" alt="icono1">
+        <h1>Extensiones</h1>
+        <p>Personaliza Firefox con tus extras favoritos como gestores de contraseñas, bloqueadores de anuncios y mucho más.</p>
+      </div>
+      <div class="empleos">
+        <img src="imagenes/icono2.png" alt="icono2">
+        <h1>Empleos</h1>
+        <p>Infórmate de las ventajas de trabajar en Mozilla y echa un vistazo a las vacantes que hay en todo el mundo.</p>
+      </div>
+      <div class="ayuda">
+        <img src="imagenes/icono3.png" alt="icono3">
+        <h1>¿Necesitas Ayuda?</h1>
+        <p>Obtén respuestas de nuestro equipo de ayuda a todas las preguntas sobre Firefox y todos los productos de Mozilla.</p>
+      </div>
+    </div>
+    
+ 
+    <div class="contenedor_formulario ancho2 margen2">
+      <div class="imagenasd">
+        <img src="imagenes/newsletter.png" alt="imagenasd">
+      </div>
+      <div class="formulario">
+        <h1>Recibe noticias de Firefox</h1>
+        <br>
+        <p>Tu dirección de correo electrónico</p>
+        <form action="loquesea.html">
+        <input type="text" placeholder="tunombre@example.com" required id="correo" name="correo">
+        <button type="submit" id="btn_enviar" class="btn_enviar">home-sign-up-now</button>
+        <p>Solo te enviaremos información relacionada con Firefox.</p>
+      </form>
+      </div>
+    </div>
+    <script>
+      $("#btn_enviar").click(function (event) {
+        event.preventDefault();
+
+       if ($("#correo").val().trim() === '') {
+      alert("No escribiste tu correo electrónico");
+      $("#correo").focus();
+      return false;
+    }
+      });
+    </script>
+  <div class="yo">
+    <h1>Jose Angel Espinosa García</h1>
+   <br>
+   <h1>7SB</h1>
+   <br>
+   <h1>Programación Web</h1>
+  </div>
+</body>
+</html>

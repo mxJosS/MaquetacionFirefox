@@ -1,0 +1,306 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  background-color: #fff;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin:auto;
+  border: 3px #989899 solid;
+}
+.margen {
+  padding: 15px;
+}
+h1 {
+  text-align: center;
+}
+.ancho2 {
+  max-width: 1200px;
+  margin:auto;
+
+}
+.margen2 {
+  padding: 15px;
+}
+.contenedor_cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: white;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.download a {
+  font-size: 16px;
+  color: #0D0CFE;
+  background-color: white;
+  border: 2px solid #0D0CFE;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contenedor_firefox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+.textito {
+  flex: 1;
+  max-width: 500px;
+}
+.logo_firefox {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.textito h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #2c2c2c;
+  text-align: left;
+}
+.texto {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.boton {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.boton:hover {
+  background-color: darkblue;
+}
+.aviso {
+  font-size: 12px;
+  color: gray;
+}
+.compu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.img_compu {
+  width: 100%;  
+  max-width: 850px; 
+  height: auto;
+}
+.contenedor_imagengrande {
+  background-color: #F6F7F6;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 60px 0;
+}
+.seccion_dino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background-color: white;
+}
+.contenido_dino {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 900px;
+  width: 100%;
+  gap: 40px;
+}
+.imagen_dino {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.imagen_dino img {
+  width: 300px; 
+  height: auto;
+}
+.texto_dino {
+  flex: 1;
+  max-width: 450px;
+  text-align: left;
+}
+.texto_dino h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  text-align: left; 
+  line-height: 1.2;
+}
+
+.texto_dino p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+.contenedor_nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+  position: relative;
+}
+.impacto, .innovaciones {
+  flex: 1;
+  max-width: 500px;
+  padding: 0 20px;
+}
+.impacto h1, .innovaciones h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+}
+.impacto p, .innovaciones p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+.impacto ul, .innovaciones ul {
+  padding-left: 20px;
+}
+.impacto ul li, .innovaciones ul li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.impacto ul li a, .innovaciones ul li a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+.impacto ul li a:hover, .innovaciones ul li a:hover {
+  text-decoration: underline;
+}
+.impacto ul li::marker, .innovaciones ul li::marker {
+  color: blue; 
+  font-size: 18px; 
+}
+.contenedor_nosotros::before {
+  content: "";
+  width: 2px;
+  height: 350px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contenedor_extensiones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.extensiones, .empleos, .ayuda {
+  flex: 1;
+  max-width: 300px;
+}
+.extensiones img, .empleos img, .ayuda img {
+  width: 80px; 
+  height: auto;
+  margin-bottom: 15px;
+}
+.extensiones h1, .empleos h1, .ayuda h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.extensiones p, .empleos p, .ayuda p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: auto;
+}
+.contenedor_formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+.formulario input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.imagenasd {
+ 
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; 
+}
+.imagenasd img {
+  width: 300px;
+  max-width: 250px;
+  height: auto;
+}
+.btn_enviar{
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.yo{
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
